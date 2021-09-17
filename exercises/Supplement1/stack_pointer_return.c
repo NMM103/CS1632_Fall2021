@@ -18,7 +18,7 @@ unsigned char* bar() {
 }
 
 int main() {
-  unsigned char *data = bar();
+  unsigned char *data = {1, 2, 3, 4, 5, 6, 7, 8};
   // At this point, data becomes a dangling pointer!
   send_data(data, 8);
   return 0;
